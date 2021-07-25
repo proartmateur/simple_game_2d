@@ -21,22 +21,22 @@
 <body>
 <p id="score_label">Score: 0</p>
 <canvas id="game"></canvas>
-<script src="/dist/js/vendor/controller/Controller.min.js"></script>
-<script src="/dist/js/vendor/controller/Controller.layouts.min.js"></script>
-<script src="/dist/js/vendor/systemjs/system.js"></script>
+<script src="./dist/js/vendor/controller/Controller.min.js"></script>
+<script src="./dist/js/vendor/controller/Controller.layouts.min.js"></script>
+<script src="./dist/js/vendor/systemjs/system.js"></script>
 <script>
 	// set our baseURL reference path
 	SystemJS.config({
 		baseURL: "/",
 		map: {
-			"kaboom": "/dist/js/vendor/kaboom/kaboom.js",
-			"controller": "dist/js/vendor/controller/Controller.min.js"
+			"kaboom": "./dist/js/vendor/kaboom/kaboom.js",
+			"controller": "./dist/js/vendor/controller/Controller.min.js"
 		},
 		defaultJSExtensions: true
 	});
 
 	// loads /js/main.js
-	SystemJS.import("dist/js/app.js");
+	SystemJS.import("./dist/js/app.js");
 </script>
 
 

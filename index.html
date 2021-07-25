@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #score_label {
+            color: white;
+            position: fixed;
+            left: 519px;
+            font-family: monospace;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<p id="score_label">Score: 0</p>
+<canvas id="game"></canvas>
+<script src="/dist/js/vendor/controller/Controller.min.js"></script>
+<script src="/dist/js/vendor/controller/Controller.layouts.min.js"></script>
+<script src="/dist/js/vendor/systemjs/system.js"></script>
+<script>
+	// set our baseURL reference path
+	SystemJS.config({
+		baseURL: "/",
+		map: {
+			"kaboom": "/dist/js/vendor/kaboom/kaboom.js",
+			"controller": "dist/js/vendor/controller/Controller.min.js"
+		},
+		defaultJSExtensions: true
+	});
+
+	// loads /js/main.js
+	SystemJS.import("dist/js/app.js");
+</script>
+
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var assets_path = '/dist/assets/art/sprites';
+var assets_path = '/simple_game_2d/dist/assets/art/sprites';
 function loadAllSprites(k) {
     k.loadSprite('mark', assets_path + "/mark.png");
     k.loadSprite('block', assets_path + "/block.png");

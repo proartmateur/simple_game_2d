@@ -8,7 +8,7 @@ exports.default = {
     scale: 2,
     clearColor: BG_BLACK,
     fullscreen: false,
-    debug: true,
+    debug: false,
     global: true,
     canvas: document.getElementById("game"),
 };
